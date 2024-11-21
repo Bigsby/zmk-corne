@@ -52,15 +52,6 @@
         };
     };
 
-    behaviors {
-        a_dance: a_dance {
-            compatible = "zmk,behavior-tap-dance";
-            label = "A_DANCE";
-            #binding-cells = <0>;
-            bindings = <&mt LEFT_GUI A>, <&key_repeat>;
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
