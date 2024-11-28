@@ -99,9 +99,9 @@
 
         default {
             bindings = <
-  &kp Q         &kp W         &kp E        &kp R          &kp T        &kp Y    &kp U        &kp I        &kp O       &kp P
-  &hrml A LGUI  &hrml LALT S  &mt LCTRL D  &hrml LSHFT F  &kp G        &kp H    &mt RSHFT J  &mt RCTRL K  &mt RALT L  &mt RGUI SEMI
-  &kp Z         &kp X         &kp C        &kp V          &lt 1 B      &kp N    &kp M        &kp COMMA    &kp DOT     &kp FSLH
+  &kp Q         &kp W         &kp F        &kp P          &kp B        &kp J    &kp L        &kp U        &kp Y       &kp SEMI
+  &hrml A LGUI  &hrml LALT R  &mt LCTRL S  &hrml LSHFT T  &kp G        &kp M    &mt RSHFT N  &mt RCTRL E  &mt RALT I  &mt RGUI O
+  &kp Z         &kp X         &kp C        &kp D          &kp V        &kp K    &kp H        &kp COMMA    &kp DOT     &kp FSLH
                               &mo 1        &kp BACKSPACE  &kp SPACE    &kp RET  &kp DEL      &mo 2
             >;
         };
