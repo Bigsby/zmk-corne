@@ -90,16 +90,16 @@
   &kp Q       &kp W       &kp F        &kp P            &kp B        &kp J    &kp L        &kp U        &kp Y       &kp SEMI
   &mt LGUI A  &mt LALT R  &mt LCTRL S  &mt LSHFT T      &kp G        &kp M    &mt RSHFT N  &mt RCTRL E  &mt RALT I  &mt RGUI O
   &kp Z       &kp X       &kp C        &kp D            &kp V        &kp K    &kp H        &kp COMMA    &kp DOT     &kp FSLH
-                          &none        &lt 1 BACKSPACE  &kp SPACE    &kp RET  &lt 2 DEL    &none
+                          &mo 3        &lt 1 BACKSPACE  &kp SPACE    &kp RET  &lt 2 DEL    &mo 4
             >;
         };
 
         num {
             bindings = <
-  &kp F10  &kp F9  &kp F8  &kp F7  &kp SLASH    &none    &kp N7  &kp N8  &kp N9  &kp MINUS
-  &kp F11  &kp F6  &kp F5  &kp F4  &kp ASTRK    &kp DOT  &kp N4  &kp N5  &kp N6  &kp PLUS
-  &kp F12  &kp F3  &kp F2  &kp F1  &none        &kp N0   &kp N1  &kp N2  &kp N3  &kp EQUAL
-                   &trans  &trans  &trans       &trans   &trans  &none
+  &kp F10  &kp F9  &kp F8  &kp F7  &none     &kp SLASH  &kp N7  &kp N8  &kp N9  &kp MINUS
+  &kp F11  &kp F6  &kp F5  &kp F4  &none     &kp ASTRK  &kp N4  &kp N5  &kp N6  &kp PLUS
+  &kp F12  &kp F3  &kp F2  &kp F1  &none     &kp DOT    &kp N1  &kp N2  &kp N3  &kp EQUAL
+                   &trans  &trans  &trans    &trans     &kp N0  &none
             >;
         };
 
