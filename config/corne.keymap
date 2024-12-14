@@ -39,19 +39,8 @@
             layers = <0>;
         };
 
-        nav {
-            bindings = <&mo 3>;
-            key-positions = <36 41 31 34>;
-        };
-
-        sys {
-            bindings = <&to 4>;
-            key-positions = <36 37 40 41 32 33>;
-            layers = <0>;
-        };
-
         lock {
-            bindings = <&kp LG(RC(K_LOCK))>;
+            bindings = <&kp K_LOCK>;
             key-positions = <10 18 11 19>;
         };
     };
