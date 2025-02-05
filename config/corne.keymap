@@ -10,6 +10,8 @@
 #include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
+#include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/pointing.h>
 
 / {
     chosen { zmk,matrix_transform = &five_column_transform; };
@@ -36,6 +38,54 @@
             bindings = <&kp CAPS>;
             key-positions = <20 21 22>;
         };
+
+        m_left {
+            bindings = <&mmv MOVE_LEFT>;
+            key-positions = <23 15>;
+            layers = <3>;
+        };
+
+        m_down {
+            bindings = <&mmv MOVE_DOWN>;
+            key-positions = <23 16>;
+            layers = <3>;
+        };
+
+        m_up {
+            bindings = <&mmv MOVE_UP>;
+            key-positions = <23 17>;
+            layers = <3>;
+        };
+
+        m_right {
+            bindings = <&mmv MOVE_RIGHT>;
+            key-positions = <23 18>;
+            layers = <3>;
+        };
+
+        ms_left {
+            bindings = <&msc SCRL_LEFT>;
+            key-positions = <23 15 22>;
+            layers = <3>;
+        };
+
+        ms_down {
+            bindings = <&msc SCRL_DOWN>;
+            key-positions = <23 22 16>;
+            layers = <3>;
+        };
+
+        ms_up {
+            bindings = <&msc SCRL_UP>;
+            key-positions = <23 22 17>;
+            layers = <3>;
+        };
+
+        ms_right {
+            bindings = <&msc SCRL_RIGHT>;
+            key-positions = <23 22 18>;
+            layers = <3>;
+        };
     };
 
     behaviors {
@@ -45,7 +95,7 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <150>;
+            tapping-term-ms = <200>;
             quick-tap-ms = <0>;
             flavor = "tap-preferred";
         };
@@ -83,10 +133,10 @@
 
         nav {
             bindings = <
-  &none   &none   &none   &none   &none     &kp HOME  &kp PAGE_UP  &kp PAGE_DOWN  &kp END    &none
-  &trans  &trans  &trans  &trans  &none     &kp LEFT  &kp DOWN     &kp UP_ARROW   &kp RIGHT  &none
-  &none   &none   &none   &none   &none     &none     &none        &none          &none      &none
-                  &trans  &trans  &trans    &trans    &trans       &trans
+  &none   &none   &none   &none   &none     &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP   &kp END          &none
+  &trans  &trans  &trans  &trans  &none     &kp LEFT        &kp DOWN        &kp UP_ARROW  &kp RIGHT        &none
+  &none   &none   &none   &none   &none     &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &none
+                  &trans  &trans  &trans    &trans          &trans          &trans
             >;
         };
 
